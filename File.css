@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  text-align: center;
+  border-width: 10px;
+  padding: 70px;
+  box-shadow: 0 4px 8px rgba(00, 0, 0, 0.1);
+}
+
+#quote-box {
+  margin-bottom: 20px;
+}
+
+#quote-text {
+  font-size: 2rem;
+  color: rgb(255, 52, 52);
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+
+  margin-bottom: 15px;
+}
+
+#author-text {
+  font-size: 1.5rem;
+  color: #8c0be2;
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+
+  margin-bottom: 25px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: white;
+  color: blue;
+}
